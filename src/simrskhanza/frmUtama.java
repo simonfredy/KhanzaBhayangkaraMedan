@@ -1906,7 +1906,7 @@ public class frmUtama extends javax.swing.JFrame {
 
         tanggal.setEditable(false);
         tanggal.setForeground(new java.awt.Color(50, 70, 50));
-        tanggal.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "23/08/2023" }));
+        tanggal.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "02/12/2023" }));
         tanggal.setDisplayFormat("dd/MM/yyyy");
         tanggal.setName("tanggal"); // NOI18N
         tanggal.setOpaque(false);
@@ -7228,13 +7228,13 @@ public class frmUtama extends javax.swing.JFrame {
         jSeparator1.setPreferredSize(new java.awt.Dimension(1, 21));
         internalFrame4.add(jSeparator1);
 
-        lblUser.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
+        lblUser.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lblUser.setForeground(new java.awt.Color(50, 50, 50));
         lblUser.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblUser.setText("Log Out");
         lblUser.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lblUser.setName("lblUser"); // NOI18N
-        lblUser.setPreferredSize(new java.awt.Dimension(170, 23));
+        lblUser.setPreferredSize(new java.awt.Dimension(300, 23));
         internalFrame4.add(lblUser);
 
         jSeparator2.setBackground(new java.awt.Color(225, 61, 142));
@@ -8302,6 +8302,8 @@ public class frmUtama extends javax.swing.JFrame {
                     if(AKTIFKANTRACKSQL.equals("yes")){
                         Sequel.menyimpan("tracker","'"+edAdmin.getText()+"',current_date(),current_time()","Login");
                     }
+                    JOptionPane.showMessageDialog(null, "Login Berhasil. Anda login sebagai user: " + Sequel.cariIsi("select nama from pegawai where nik=?", akses.getkode()));
+                    lblUser.setText(Sequel.cariIsi("select nama from pegawai where nik=?", akses.getkode()));
                 }else if((akses.getjml1()==0)&&(akses.getjml2()==0)){
                     JOptionPane.showMessageDialog(null,"Maaf, Gagal login. ID User atau password ada yang salah ...!");
                     BtnToolReg.setEnabled(false);
