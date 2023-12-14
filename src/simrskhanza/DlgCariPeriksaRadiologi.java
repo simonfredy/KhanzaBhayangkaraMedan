@@ -1712,25 +1712,25 @@ private void tbDokterKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
             finger=Sequel.cariIsi("select sha1(sidikjari.sidikjari) from sidikjari inner join pegawai on pegawai.id=sidikjari.id where pegawai.nik=?",kdpetugas);
             param.put("finger2","Dikeluarkan di "+akses.getnamars()+", Kabupaten/Kota "+akses.getkabupatenrs()+"\nDitandatangani secara elektronik oleh "+tbDokter.getValueAt(tbDokter.getSelectedRow(),2).toString()+"\nID "+(finger.equals("")?kdpetugas:finger)+"\n"+Valid.SetTgl3(tbDokter.getValueAt(tbDokter.getSelectedRow(),3).toString()));  
 
-            pilihan = (String)JOptionPane.showInputDialog(null,"Silahkan pilih hasil pemeriksaan..!","Hasil Pemeriksaan",JOptionPane.QUESTION_MESSAGE,null,new Object[]{"Model 1","Model 2", "Model 3","PDF Model 1","PDF Model 2","PDF Model 3"},"Model 1");
+            pilihan = (String)JOptionPane.showInputDialog(null,"Silahkan pilih hasil pemeriksaan..!","Hasil Pemeriksaan",JOptionPane.QUESTION_MESSAGE,null,new Object[]{"Hasil Radiologi","Hasil USG", "Model 3","PDF Hasil Radiologi","PDF Hasil USG","PDF Model 3"},"Model 1");
             switch (pilihan) {
-                case "Model 1":
-                      Valid.MyReport("rptPeriksaRadiologi.jasper","report","::[ Pemeriksaan Radiologi ]::",param);
+                case "Hasil Radiologi":
+                      Valid.MyReport("rptPeriksaRadiologi.jasper","report","::[ Hasil Pemeriksaan Radiologi ]::",param);
                       break;
-                case "Model 2":
-                      Valid.MyReport("rptPeriksaRadiologi2.jasper","report","::[ Pemeriksaan Radiologi ]::",param);
+                case "Hasil USG":
+                      Valid.MyReport("rptPeriksaRadiologi2.jasper","report","::[ Hasil Pemeriksaan USG ]::",param);
                       break;
                 case "Model 3":
                       Valid.MyReport("rptPeriksaRadiologi3.jasper","report","::[ Pemeriksaan Radiologi ]::",param);
                       break;
-                case "PDF Model 1":
-                      Valid.MyReportPDF("rptPeriksaRadiologi.jasper","report","::[ Pemeriksaan Radiologi ]::",param);
+                case "PDF Hasil Radiologi":
+                      Valid.MyReportPDF("rptPeriksaRadiologi.jasper","report","::[ Hasil Pemeriksaan Radiologi ]::",param);
                       break;
-                case "PDF Model 2":
+                case "PDF Hasil USG":
                       Valid.MyReportPDF("rptPeriksaRadiologi2.jasper","report","::[ Pemeriksaan Radiologi ]::",param);
                       break;
                 case "PDF Model 3":
-                      Valid.MyReportPDF("rptPeriksaRadiologi3.jasper","report","::[ Pemeriksaan Radiologi ]::",param);
+                      Valid.MyReportPDF("rptPeriksaRadiologi3.jasper","report","::[ Hasil Pemeriksaan USG ]::",param);
                       break;
             }                        
             
