@@ -85,7 +85,7 @@
         <form method="POST" action="pages/storeImage.php" onsubmit="return validasiIsi();" enctype=multipart/form-data>
             <input type="hidden" name="nopernyataan" value="<?=$nopernyataan;?>">
             <h7 class="text-dark">
-                Saya yang membuat pernyataan di bawah ini :
+                Saya yang bertanda tangan di bawah ini :
             </h7>
             <table class="default" width="100%" border="0" align="center" cellpadding="3px" cellspacing="0px">
                 <tr class="text-dark">
@@ -109,14 +109,13 @@
                     <td width="75%">: <?=$alamat;?></td>
                 </tr>
                 <tr class="text-dark">
-                    <td width="25%">Hubungan Dengan Pasien</td>
-                    <td width="75%">: <?=$hubungan;?></td>
+                    <td width="25%">selaku <strong><?=$hubungan;?></strong> dari pasien:</td>
                 </tr>
             </table>
             <br/>
-            <h7 class="text-dark">
+            <!-- <h7 class="text-dark">
                 Terhadap Pasien : 
-            </h7>
+            </h7> -->
             <table class="default" width="100%" border="0" align="center" cellpadding="3px" cellspacing="0px">
                 <tr class="text-dark">
                     <td width="25%">Nama Pasien</td>
@@ -143,17 +142,22 @@
             <table class="default" width="100%" border="0" align="center" cellpadding="3px" cellspacing="0px">
                 <tr class="text-dark">
                     <td width="2%" valign="top">1.</td>
-                    <td width="98%" valign="top" align="justify">Dengan sadar tanpa paksaan dari pihak manapun meminta kepada pihak <?=$namars?> untuk PULANG ATAS PERMINTAAN SENDIRI yang merupakan hak saya/pasien dengan Alasan/Pindah Rawat "<?=$rs_pilihan?>"</td>
+                    <td width="98%" valign="top" align="justify">Dengan sadar tanpa paksaan dari pihak manapun meminta kepada pihak Rumah Sakit untuk PULANG ATAS PERMINTAAN SENDIRI yang merupakan hak saya/pasien dengan Alasan "<?=$rs_pilihan?>"</td>
                 </tr>
                 <tr class="text-dark">
                     <td width="2%" valign="top">2.</td>
-                    <td width="98%" valign="top" align="justify">Saya telah memahami sepenuhnya penjelasan yang diberikan oleh pihak <?=$namars?> mengenai penyakit saya/pasien dan kemungkinan/konsekuensi terburuk atas keputusan yang saya ambil dan saya siap bertanggung jawab atas keputusan saya tersebut dan saya tidak akan menuntut pihak <?=$namars?>.</td>
+                    <td width="98%" valign="top" align="justify">Saya telah memahami sepenuhnya penjelasan yang diberikan oleh pihak Rumah Sakit mengenai penyakit dan kemungkinan atau konsekuensi terbaik dengan terburuk atas keputusan yang saya ambil serta tanggung jawab saya dalam mengambil keputusan ini</td>
+                </tr>
+                <tr class="text-dark">
+                    <td width="2%" valign="top">3.</td>
+                    <td width="98%" valign="top" align="justify">Apabila terjadi sesuatu hal berkaitan dengan putusan yang telah diambil, maka hal tersebut adalah menjadi tanggung jawab pasien / keluarga sepenuhnya dan tidak akan menyangkut pautkan atau menuntut Rumah Sakit ini.</td>
+                </tr>
+                <tr class="text-dark">
+                    <td width="2%" valign="top">4.</td>
+                    <td width="98%" valign="top" align="justify">Atas keputusan saya ini, rumah sakit telah memberikan penjelasan mengenai alternatif pengobatan selanjutnya</td>
                 </tr>
             </table>
             <br/>
-            <h7 class="text-dark">
-                Demikian pernyataan ini saya buat dengan sesungguhnya untuk dipergunakan sebagaimana mestinya.
-            </h7>
             <br/>
             <br/>
             <h7 class="text-dark"><center>Yang Membuat Pernyataan</center></h7>
