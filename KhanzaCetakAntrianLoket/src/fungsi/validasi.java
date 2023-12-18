@@ -44,6 +44,7 @@ import net.sf.jasperreports.engine.JRResultSetDataSource;
 import net.sf.jasperreports.engine.JasperExportManager;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.JasperPrintManager;  //autoprint
 import net.sf.jasperreports.view.JasperViewer;
 import uz.ncipro.calendar.JDateTimePicker;
 import widget.Button;
@@ -606,13 +607,15 @@ public final class validasi {
                     String namafile="./"+reportDirName+"/"+reportName;
                     JasperPrint jasperPrint = JasperFillManager.fillReport(namafile, parameters, connect);
                     
-                    JasperViewer jasperViewer = new JasperViewer(jasperPrint, false);
-                    jasperViewer.setTitle(judul);
-                    Dimension screen=Toolkit.getDefaultToolkit().getScreenSize();
-                    jasperViewer.setSize(screen.width-50,screen.height-50);
-                    jasperViewer.setModalExclusionType(ModalExclusionType.TOOLKIT_EXCLUDE);
-                    jasperViewer.setLocationRelativeTo(null);
-                    jasperViewer.setVisible(true);
+                    JasperPrintManager.printReport(jasperPrint, false);
+                    
+//                    JasperViewer jasperViewer = new JasperViewer(jasperPrint, false);
+//                    jasperViewer.setTitle(judul);
+//                    Dimension screen=Toolkit.getDefaultToolkit().getScreenSize();
+//                    jasperViewer.setSize(screen.width-50,screen.height-50);
+//                    jasperViewer.setModalExclusionType(ModalExclusionType.TOOLKIT_EXCLUDE);
+//                    jasperViewer.setLocationRelativeTo(null);
+//                    jasperViewer.setVisible(true);
                 } catch (Exception rptexcpt) {
                     System.out.println("Report Can't view because : " + rptexcpt);
                     JOptionPane.showMessageDialog(null,"Report Can't view because : "+ rptexcpt);
@@ -692,13 +695,15 @@ public final class validasi {
                     String namafile="./"+reportDirName+"/"+reportName;
                     JasperPrint jasperPrint = JasperFillManager.fillReport(namafile, parameters, connect);
                     
-                    JasperViewer jasperViewer = new JasperViewer(jasperPrint, false);
-                    jasperViewer.setTitle(judul);
-                    Dimension screen=Toolkit.getDefaultToolkit().getScreenSize();
-                    jasperViewer.setSize(screen.width-50,screen.height-50);
-                    jasperViewer.setModalExclusionType(ModalExclusionType.TOOLKIT_EXCLUDE);
-                    jasperViewer.setLocationRelativeTo(null);
-                    jasperViewer.setVisible(true);
+                    JasperPrintManager.printReport(jasperPrint, false);
+                    
+//                    JasperViewer jasperViewer = new JasperViewer(jasperPrint, false);
+//                    jasperViewer.setTitle(judul);
+//                    Dimension screen=Toolkit.getDefaultToolkit().getScreenSize();
+//                    jasperViewer.setSize(screen.width-50,screen.height-50);
+//                    jasperViewer.setModalExclusionType(ModalExclusionType.TOOLKIT_EXCLUDE);
+//                    jasperViewer.setLocationRelativeTo(null);
+//                    jasperViewer.setVisible(true);
                 } catch (Exception rptexcpt) {
                     System.out.println("Report Can't view because : " + rptexcpt);
                     JOptionPane.showMessageDialog(null,"Report Can't view because : "+ rptexcpt);
@@ -739,13 +744,15 @@ public final class validasi {
                 
                 JasperPrint jasperPrint = JasperFillManager.fillReport(namafile, parameters,rsdt);
 
-                JasperViewer jasperViewer = new JasperViewer(jasperPrint, false);
-                jasperViewer.setTitle(judul);
-                Dimension screen=Toolkit.getDefaultToolkit().getScreenSize();
-                jasperViewer.setSize(screen.width-50,screen.height-50);
-                jasperViewer.setModalExclusionType(ModalExclusionType.TOOLKIT_EXCLUDE);
-                jasperViewer.setLocationRelativeTo(null);
-                jasperViewer.setVisible(true);
+                JasperPrintManager.printReport(jasperPrint, false);
+                
+//                JasperViewer jasperViewer = new JasperViewer(jasperPrint, false);
+//                jasperViewer.setTitle(judul);
+//                Dimension screen=Toolkit.getDefaultToolkit().getScreenSize();
+//                jasperViewer.setSize(screen.width-50,screen.height-50);
+//                jasperViewer.setModalExclusionType(ModalExclusionType.TOOLKIT_EXCLUDE);
+//                jasperViewer.setLocationRelativeTo(null);
+//                jasperViewer.setVisible(true);
             } catch (Exception rptexcpt) {
                 System.out.println("Report Can't view because : " + rptexcpt);
                 JOptionPane.showMessageDialog(null,"Report Can't view because : "+ rptexcpt);
