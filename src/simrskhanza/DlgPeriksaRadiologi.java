@@ -1510,6 +1510,7 @@ private void ChkJlnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:
             param.put("pengirim",NmPerujuk.getText());
             param.put("tanggal",Tanggal.getSelectedItem());
             param.put("penjab",NmDokterPj.getText());
+            param.put("status", Penjab.getText());
             param.put("petugas",NmPtg.getText());
             param.put("alamat",Alamat.getText());
             param.put("kamar",kamar);
