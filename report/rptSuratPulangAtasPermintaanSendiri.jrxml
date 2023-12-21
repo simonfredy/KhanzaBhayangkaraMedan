@@ -552,9 +552,9 @@
 				<textFieldExpression><![CDATA[$P{kontakrs}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="58" y="27" width="189" height="17" uuid="afa10cc4-abea-4ccb-a455-2e99d381f047"/>
+				<reportElement x="58" y="27" width="216" height="17" uuid="afa10cc4-abea-4ccb-a455-2e99d381f047"/>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="12"/>
+					<font fontName="Arial" size="12" isBold="true"/>
 					<paragraph lineSpacing="Single"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{namars}]]></textFieldExpression>
