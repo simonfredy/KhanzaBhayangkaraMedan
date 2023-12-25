@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="assets/"
+    data-template="horizontal-menu-template">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Antrian</title>
+
+    <meta name="description" content="" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/css/rtl/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="assets/vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" /> 
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" /> 
+    <link rel="stylesheet" href="assets/vendor/libs/typeahead-js/typeahead.css" />  
+
+ 
+    <!-- Helpers -->
+    <script src="assets/vendor/js/helpers.js"></script>
+    <script src="assets/vendor/js/jquery.js"></script>
+    <style>
+ 
+ .layout-wrapper {
+            background-image: url('assets/img/background.jpg'); /* Ganti dengan path gambar Anda */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow-x: hidden; 
+        }
+
+.table-container {
+  max-height: 300px; /* Sesuaikan dengan tinggi maksimum yang Anda inginkan */
+  overflow-y: auto;
+}
+
+    </style>
+
+ 
+</head>
+
+<body>
+
+   
+
+
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-navbar-full layout-horizontal layout-without-menu">
+        <div class="layout-container">
+            <!-- Navbar -->
+
+            <nav class="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme bg-success bg-gradient" id="layout-navbar">
+                <div class="container-xl ">
+                    <div class="navbar-brand app-brand demo ">
+                        <a href="index.html" class="app-brand-link gap-1">
+                            <span class="app-brand-logo demo"> 
+                                <!-- <img src=""> -->
+                            </span>
+                            <span class="app-brand-text demo menu-text fw-bold">
+                            <h3  style="color:#fff;"><i class="fa far fas fa-hospital-symbol "></i> <b  style="color:#fff;" id="namars"></b>
+                            </h3>
+                        </span>
+                        </a> 
+                    </div> 
+
+                    <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+                        <ul class="navbar-nav flex-row align-items-center ms-auto">
+                            <h3 style="color:#fff;"  ><i class="fa far fa-clock "></i>
+                            <b id="clock">-</b></h3>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+
+            <!-- / Navbar -->
+
+            <!-- Layout container -->
+            <div class="layout-page">
+<!-- Content wrapper -->
+<div class="content-wrapper">
+  <div class=" container-p-y"> 
+  <div class="row">
+   
+    
+              <!-- Card Groups -->
+              <div class="card-group mp-0 "> 
+                <div class="card"> 
+                  <div class="text-center">
+                    <h2 class="card mb-0 radius-0">ANTRIAN FARMASI</h2> 
+                    <b class="card mb-0 radius-0" id="nomor"></b> 
+                  </div> 
+                </div>   
+              </div>
+               <!-- Card Groups -->
+              <div class="card-group mp-0 "> 
+                <div class="card"> 
+                  <div class="text-center mb-0">
+                    <h3 class="bg-label-danger mb-0 ">NON RACIKAN</h3>
+                    <!-- <center class="h4 ">RUDI SANTOSO (202308170002)</center> -->
+                    <!-- <center class=" ">DEWI EKAWATI</center> -->
+                  </div> 
+                </div>  
+                <div class="card"> 
+                  <div class="text-center mb-0">
+                    <h3 class="bg-label-primary mb-0 ">RACIKAN</h3>
+                    <!-- <center class="h4 ">RUDI SANTOSO (202308170002)</center> -->
+                    <!-- <center class=" ">DEWI EKAWATI</center> -->
+                  </div> 
+                </div>  
+              </div>
+
+              <div class="card-group"> 
+                <div class="card"> 
+                  <div class="card-body">
+                    <div class="table-responsive text-nowrap">
+                      
+                      <div style="height: 300px; max-height: 300px; overflow: hidden;">
+                        <b id="nonracikan"></b>
+                        
+                      <!-- <table class="table table-sm ">
+                          <thead>
+                            <tr>
+                              <th>No Resep</th>
+                              <th>Pasien</th>
+                              <th>Peresepan</th>
+                              <th>Penyerahan</th> 
+                            </tr>
+                          </thead>  
+                          <tbody> 
+                            <tr class="bg-label-danger" id="nonracikan">
+                              <td>-</td>
+                              <td>-</td>
+                              <td>-</td>
+                              <td>-</td>
+                            </tr>  
+                          </tbody>  
+                          </table>  -->
+                        </div>
+                        
+                  </div>
+                  </div> 
+                </div>
+
+ 
+                <div class="card"> 
+                  <div class="card-body">
+                    <div class="table-responsive text-nowrap">
+                      
+                      <div style="height: 300px; max-height: 300px; overflow: hidden;">
+                        <b id="racikan"></b>
+                      <!-- <table class="table table-sm">
+                          <thead>
+                            <tr>
+                              <th>No Resep</th>
+                              <th>Pasien</th>
+                              <th>Peresepan</th>
+                              <th>Penyerahan</th> 
+                            </tr>
+                          </thead> 
+                            <tr class="bg-label-primary text-white">
+                              <td>4567890976</td>
+                              <td>Widyawati</td>
+                              <td>20:21:20</td>
+                              <td>20:29:20</td>
+                            </tr> 
+                            <tr>
+                              <td>4567890976</td>
+                              <td>Widyawati</td>
+                              <td>20:21:20</td>
+                              <td>20:29:20</td>
+                            </tr> 
+                            <tr>
+                              <td>4567890976</td>
+                              <td>Widyawati</td>
+                              <td>20:21:20</td>
+                              <td>20:29:20</td>
+                            </tr> 
+                            <tr>
+                              <td>4567890976</td>
+                              <td>Widyawati</td>
+                              <td>20:21:20</td>
+                              <td>20:29:20</td>
+                            </tr> 
+                            
+                      </table> -->
+                        </div>
+                        
+                  </div>
+                  </div> 
+                </div>
+
+ 
+ 
+             
+  </div>             
+  </div>             
+</div>
+<!--/ Content -->
+
+
+
+                    <!-- Footer -->
+
+                    <footer class="content-footer footer bg-footer-theme bg-success bg-gradient">
+                        <div
+                          class="container-fluid d-flex flex-md-row flex-column justify-content-between align-items-md-center gap-1 container-p-x py-2"
+                        >
+                        
+                        <div class="col-11 "> <marquee><b class="text-black h4 text-white" id="text" ></b></marquee>
+                        </div>
+                        
+                        <div class="col-1">  
+                            <a id="myname"></a>                             
+                          </div>
+
+                          
+                          
+                        </div>
+                      </footer>
+                       
+                    <!-- / Footer -->
+
+                    <div class="content-backdrop fade"></div>
+                </div>
+                <!--/ Content wrapper -->
+            </div>
+
+            <!--/ Layout container -->
+        </div>
+    </div>
+
+    <audio id="myAudio" src="assets/notif.mp3" ></audio> 
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+    <div class="drag-target"></div>
+    <!-- Core JS -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="app/antrian.js"></script>     
+    <script src="assets/responsivevoice.js?key=WfWmvaX0"></script>
+    <script src="assets/vendor/js/theme.js"></script> 
+</body>
+</html>

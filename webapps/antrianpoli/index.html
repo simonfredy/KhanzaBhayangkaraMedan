@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="assets/"
+    data-template="horizontal-menu-template">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Antrian</title>
+
+    <meta name="description" content="" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/css/rtl/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="assets/vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" /> 
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" /> 
+    <link rel="stylesheet" href="assets/vendor/libs/typeahead-js/typeahead.css" />  
+
+ 
+    <!-- Helpers -->
+    <script src="assets/vendor/js/helpers.js"></script>
+    <script src="assets/vendor/js/jquery.js"></script>
+    <style>
+ 
+ .layout-wrapper {
+            background-image: url('assets/img/background.jpg'); /* Ganti dengan path gambar Anda */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow-x: hidden; 
+        }
+
+    </style>
+
+ 
+</head>
+
+<body>
+
+   
+
+
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-navbar-full layout-horizontal layout-without-menu">
+        <div class="layout-container">
+            <!-- Navbar -->
+
+            <nav class="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme bg-primary bg-gradient" id="layout-navbar">
+                <div class="container-xl ">
+                    <div class="navbar-brand app-brand demo ">
+                        <a href="index.html" class="app-brand-link gap-1">
+                            <span class="app-brand-logo demo"> 
+                                <!-- <img src=""> -->
+                            </span>
+                            <span class="app-brand-text demo menu-text fw-bold">
+                            <h3  style="color:#fff;"><i class="fa far fas fa-hospital-symbol "></i> <b  style="color:#fff;" id="namars"></b>
+                            </h3>
+                        </span>
+                        </a> 
+                    </div> 
+
+                    <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+                        <ul class="navbar-nav flex-row align-items-center ms-auto">
+                            <h3 style="color:#fff;"  ><i class="fa far fa-clock "></i>
+                            <b id="clock">-</b></h3>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+
+            <!-- / Navbar -->
+
+            <!-- Layout container -->
+            <div class="layout-page">
+                <!-- Content wrapper -->
+                <div class="content-wrapper">
+                    <!-- Menu -->
+
+                    <!-- / Menu -->
+
+                    <!-- Content -->
+
+                    <div class="container-xxl flex-grow-1 container-p-y">
+                        <div class="row">
+                            <!-- Nomor yang tampil besar -->
+                            <div class="col-lg-5 mb-1 text-center ">
+                                <div class="card h-100 border border-primary mb-3"> 
+                                <div class="card"><h3>ANTRIAN POLI</h3>
+                                </div>
+                                    <div class="card-body"> 
+                                        <h4 class="mb-0  mt-4" id="nomor"></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/ Nomor yang tampil besar -->   
+                            
+                            
+                            <!-- Video -->
+                            <div class="col-7 mb-1">
+                                <div class="card ">                                   
+                                    <video
+                                    id="myVideo"
+                                      class="w-100" 
+                                      playsinline 
+                                      autoplay> 
+                                    </video> 
+                                </div>
+                              </div> 
+                              <!-- video -->
+
+                            <!-- data poli -->
+                            <div class="container-xxl flex-grow-1 container-p-y">
+                                <div class="row" id="datapoli"> </div>
+                            </div>          
+                            <!-- data poli -->
+
+                </div>                 
+            </div>
+<!--/ Content -->
+
+
+
+                    <!-- Footer -->
+
+                    <footer class="content-footer footer bg-footer-theme bg-info bg-gradient">
+                        <div
+                          class="container-fluid d-flex flex-md-row flex-column justify-content-between align-items-md-center gap-1 container-p-x py-2"
+                        >
+                        
+                        <div class="col-11 "> <marquee><b class="text-black h4" id="text" ></b></marquee>
+                        </div>
+                        
+                        <div class="col-1">  
+                            <a id="myname"></a>                             
+                          </div>
+
+                          
+                          
+                        </div>
+                      </footer>
+                       
+                    <!-- / Footer -->
+
+                    <div class="content-backdrop fade"></div>
+                </div>
+                <!--/ Content wrapper -->
+            </div>
+
+            <!--/ Layout container -->
+        </div>
+    </div>
+
+    <audio id="myAudio" src="assets/notif.mp3" ></audio> 
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+    <div class="drag-target"></div>
+    <!-- Core JS -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="app/antrian.js"></script>     
+    <script src="assets/responsivevoice.js?key=WfWmvaX0"></script>
+    <script src="assets/vendor/js/theme.js"></script> 
+</body>
+</html>
