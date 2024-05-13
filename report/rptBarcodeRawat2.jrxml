@@ -16,10 +16,10 @@
 	<queryString>
 		<![CDATA[select no_rawat from reg_periksa where no_rawat= $P{no_rawat}]]>
 	</queryString>
+	<field name="no_ktp" class="java.lang.String"/>
 	<field name="no_rawat" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
-	<field name="no_ktp" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -116,13 +116,6 @@
 				</textElement>
 				<text><![CDATA[:]]></text>
 			</staticText>
-			<textField>
-				<reportElement x="32" y="39" width="61" height="9" uuid="2fe40cec-3561-494d-9206-4cf0b92c48f3"/>
-				<textElement>
-					<font fontName="Arial" size="6"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{no_ktp}]]></textFieldExpression>
-			</textField>
 			<staticText>
 				<reportElement x="0" y="0" width="106" height="8" uuid="e6f4a068-d81e-4b27-9dbd-d4e7f778dacd"/>
 				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
@@ -136,6 +129,14 @@
 				</textElement>
 				<text><![CDATA[RS Bhayangkara TK II Medan]]></text>
 			</staticText>
+			<textField>
+				<reportElement x="32" y="39" width="73" height="9" uuid="6cb72121-2baf-4b4e-97d6-63ee605b0e16"/>
+				<textElement>
+					<font fontName="Arial" size="6"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{no_ktp}]]></textFieldExpression>
+			</textField>
 		</band>
 	</detail>
 </jasperReport>

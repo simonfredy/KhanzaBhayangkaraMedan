@@ -258,7 +258,7 @@ public class DlgKamarInap extends javax.swing.JDialog {
             }else if(i==21){
                 column.setPreferredWidth(60);
             }else if(i==22){
-                column.setPreferredWidth(80);
+                column.setPreferredWidth(200);
             }
         }
         tbKamIn.setDefaultRenderer(Object.class, new WarnaTable());

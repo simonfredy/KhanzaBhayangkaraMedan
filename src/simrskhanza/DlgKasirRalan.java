@@ -10020,8 +10020,8 @@ private void MnDataPemberianObatActionPerformed(java.awt.event.ActionEvent evt) 
             param.put("propinsirs",akses.getpropinsirs());
             param.put("kontakrs",akses.getkontakrs());
             param.put("emailrs",akses.getemailrs());
-            Valid.MyReportqry("rptBarcodeRawat2.jasper","report","::[ Barcode No.Rawat ]::",
-                "select reg_periksa.no_rawat from reg_periksa where no_rawat='"+TNoRw.getText()+"'",param);
+            Valid.MyReportqry("rptBarcodeRawat2.jasper","report","::[ Barcode Pasien ]::",
+                "select reg_periksa.no_rawat,pasien.no_ktp from reg_periksa inner join pasien on reg_periksa.no_rkm_medis=pasien.no_rkm_medis where no_rawat='"+TNoRw.getText()+"'",param);
             this.setCursor(Cursor.getDefaultCursor());
         }
     }//GEN-LAST:event_MnBarcode1ActionPerformed
