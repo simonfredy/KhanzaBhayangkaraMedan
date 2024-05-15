@@ -311,7 +311,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
             }else if(i==19){
                 column.setPreferredWidth(95);
             }else if(i==20){
-                column.setPreferredWidth(99);
+                column.setPreferredWidth(140);
             }
         }
         try {
@@ -372,7 +372,7 @@ public final class DlgKasirRalan extends javax.swing.JDialog {
             }else if(i==15){
                 column.setPreferredWidth(110);
             }else if(i==16){
-                column.setPreferredWidth(99);
+                column.setPreferredWidth(140);
             }
         }
         tbKasirRalan2.setDefaultRenderer(Object.class, new WarnaTable());

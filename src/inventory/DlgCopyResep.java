@@ -59,8 +59,9 @@ public class DlgCopyResep extends javax.swing.JDialog {
             }else if(i==5){
                 column.setPreferredWidth(300);
             }else if(i==6){
-                column.setMinWidth(0);
-                column.setMaxWidth(0);
+//              column.setMinWidth(0);
+//              column.setMaxWidth(0);
+                column.setPreferredWidth(170);
             }else if(i==7){
                 column.setMinWidth(0);
                 column.setMaxWidth(0);

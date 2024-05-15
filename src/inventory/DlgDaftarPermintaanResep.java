@@ -110,7 +110,7 @@ public class DlgDaftarPermintaanResep extends javax.swing.JDialog {
             }else if(i==15){
                 column.setPreferredWidth(90);
             }else if(i==16){
-                column.setPreferredWidth(99);
+                column.setPreferredWidth(140);
             }
         }
         tbResepRalan.setDefaultRenderer(Object.class, new WarnaTable());

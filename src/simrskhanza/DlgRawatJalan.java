@@ -2032,7 +2032,7 @@ public final class DlgRawatJalan extends javax.swing.JDialog {
 
         internalFrame2.add(TabRawatTindakanDokter, java.awt.BorderLayout.CENTER);
 
-        TabRawat.addTab("Penanganan Dokter", internalFrame2);
+        TabRawat.addTab("Tindakan Dokter", internalFrame2);
 
         internalFrame3.setBorder(null);
         internalFrame3.setName("internalFrame3"); 
@@ -2125,7 +2125,7 @@ public final class DlgRawatJalan extends javax.swing.JDialog {
 
         internalFrame3.add(TabRawatTindakanPetugas, java.awt.BorderLayout.CENTER);
 
-        TabRawat.addTab("Penanganan Petugas", internalFrame3);
+        TabRawat.addTab("Tindakan Perawat", internalFrame3);
 
         internalFrame4.setBorder(null);
         internalFrame4.setName("internalFrame4"); 
@@ -2251,7 +2251,7 @@ public final class DlgRawatJalan extends javax.swing.JDialog {
 
         internalFrame4.add(TabRawatTindakanDokterPetugas, java.awt.BorderLayout.CENTER);
 
-        TabRawat.addTab("Penanganan Dokter & Petugas", internalFrame4);
+        TabRawat.addTab("Tindakan Dokter & Perawat", internalFrame4);
 
         internalFrame5.setBackground(new java.awt.Color(235, 255, 235));
         internalFrame5.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -2307,8 +2307,9 @@ public final class DlgRawatJalan extends javax.swing.JDialog {
         panelGlass12.setPreferredSize(new java.awt.Dimension(44, 134));
         panelGlass12.setLayout(null);
 
-        jLabel8.setText("Subjek :");
+        jLabel8.setText("Subjek(S) :");
         jLabel8.setName("jLabel8"); 
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 11));
         panelGlass12.add(jLabel8);
         jLabel8.setBounds(0, 70, 70, 23);
 
@@ -2342,8 +2343,9 @@ public final class DlgRawatJalan extends javax.swing.JDialog {
         panelGlass12.add(jLabel17);
         jLabel17.setBounds(0, 190, 70, 23);
 
-        jLabel9.setText("Objek :");
+        jLabel9.setText("Objek(O) :");
         jLabel9.setName("jLabel9"); 
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 11));
         panelGlass12.add(jLabel9);
         jLabel9.setBounds(0, 115, 70, 23);
 
@@ -2379,13 +2381,15 @@ public final class DlgRawatJalan extends javax.swing.JDialog {
         panelGlass12.add(scrollPane1);
         scrollPane1.setBounds(73, 70, 360, 38);
 
-        jLabel28.setText("Asesmen :");
+        jLabel28.setText("Asesmen(A) :");
         jLabel28.setName("jLabel28"); 
+        jLabel28.setFont(new java.awt.Font("Tahoma", 1, 11));
         panelGlass12.add(jLabel28);
         jLabel28.setBounds(450, 40, 90, 23);
 
-        jLabel26.setText("Plan :");
+        jLabel26.setText("Plan(P) :");
         jLabel26.setName("jLabel26"); 
+        jLabel26.setFont(new java.awt.Font("Tahoma", 1, 11));
         panelGlass12.add(jLabel26);
         jLabel26.setBounds(450, 85, 90, 23);
 
@@ -2580,8 +2584,9 @@ public final class DlgRawatJalan extends javax.swing.JDialog {
         panelGlass12.add(jLabel41);
         jLabel41.setBounds(0, 40, 190, 23);
 
-        jLabel53.setText("Instruksi :");
+        jLabel53.setText("Instruksi(I) :");
         jLabel53.setName("jLabel53"); 
+        jLabel53.setFont(new java.awt.Font("Tahoma", 1, 11));
         panelGlass12.add(jLabel53);
         jLabel53.setBounds(450, 139, 90, 23);
 
@@ -2617,8 +2622,9 @@ public final class DlgRawatJalan extends javax.swing.JDialog {
         panelGlass12.add(SpO2);
         SpO2.setBounds(73, 220, 42, 23);
 
-        jLabel56.setText("Evaluasi :");
-        jLabel56.setName("jLabel56"); 
+        jLabel56.setText("Evaluasi(E) :");
+        jLabel56.setName("jLabel56");
+        jLabel56.setFont(new java.awt.Font("Tahoma", 1, 11));
         panelGlass12.add(jLabel56);
         jLabel56.setBounds(450, 196, 90, 23);
 
@@ -2677,7 +2683,7 @@ public final class DlgRawatJalan extends javax.swing.JDialog {
 
         internalFrame5.add(PanelInput, java.awt.BorderLayout.PAGE_START);
 
-        TabRawat.addTab("Pemeriksaan", internalFrame5);
+        TabRawat.addTab("Pemeriksaan/SOAPIE", internalFrame5);
 
         internalFrame6.setBackground(new java.awt.Color(235, 255, 235));
         internalFrame6.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -3406,7 +3412,7 @@ public final class DlgRawatJalan extends javax.swing.JDialog {
 
         panelDiagnosa1.setBorder(null);
         panelDiagnosa1.setName("panelDiagnosa1"); 
-        TabRawat.addTab("Diagnosa", panelDiagnosa1);
+        TabRawat.addTab("Diagnosa (ICD)", panelDiagnosa1);
 
         internalFrame8.setBackground(new java.awt.Color(235, 255, 235));
         internalFrame8.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
