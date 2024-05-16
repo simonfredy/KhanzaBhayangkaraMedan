@@ -1700,6 +1700,8 @@ public class frmUtama extends javax.swing.JFrame {
         lblStts = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         lblUser = new javax.swing.JLabel();
+        jSeparator8 = new javax.swing.JSeparator();
+        lblNamaUser = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
         lblTgl = new javax.swing.JLabel();
         jSeparator3 = new javax.swing.JSeparator();
@@ -1978,7 +1980,7 @@ public class frmUtama extends javax.swing.JFrame {
 
         tanggal.setEditable(false);
         tanggal.setForeground(new java.awt.Color(50, 70, 50));
-        tanggal.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "14/04/2024" }));
+        tanggal.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "16/05/2024" }));
         tanggal.setDisplayFormat("dd/MM/yyyy");
         tanggal.setName("tanggal"); // NOI18N
         tanggal.setOpaque(false);
@@ -7309,6 +7311,24 @@ public class frmUtama extends javax.swing.JFrame {
         lblUser.setPreferredSize(new java.awt.Dimension(170, 23));
         internalFrame4.add(lblUser);
 
+        jSeparator8.setBackground(new java.awt.Color(225, 61, 142));
+        jSeparator8.setForeground(new java.awt.Color(225, 61, 142));
+        jSeparator8.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jSeparator8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(217, 1, 122)));
+        jSeparator8.setName("jSeparator8"); // NOI18N
+        jSeparator8.setOpaque(true);
+        jSeparator8.setPreferredSize(new java.awt.Dimension(1, 21));
+        internalFrame4.add(jSeparator8);
+
+        lblNamaUser.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
+        lblNamaUser.setForeground(new java.awt.Color(50, 50, 50));
+        lblNamaUser.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblNamaUser.setText("-");
+        lblNamaUser.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        lblNamaUser.setName("lblNamaUser"); // NOI18N
+        lblNamaUser.setPreferredSize(new java.awt.Dimension(300, 23));
+        internalFrame4.add(lblNamaUser);
+
         jSeparator2.setBackground(new java.awt.Color(225, 61, 142));
         jSeparator2.setForeground(new java.awt.Color(225, 61, 142));
         jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -8388,6 +8408,9 @@ public class frmUtama extends javax.swing.JFrame {
                     if(AKTIFKANTRACKSQL.equals("yes")){
                         Sequel.menyimpan("tracker","'"+edAdmin.getText()+"',current_date(),current_time()","Login");
                     }
+                    
+                    lblNamaUser.setText(Sequel.cariIsi("select nama from pegawai where nik=?", akses.getkode()));
+                    
                 }else if((akses.getjml1()==0)&&(akses.getjml2()==0)){
                     JOptionPane.showMessageDialog(null,"Maaf, Gagal login. ID User atau password ada yang salah ...!");
                     BtnToolReg.setEnabled(false);
@@ -21977,9 +22000,11 @@ private void MnGantiPasswordBtnLogActionPerformed(java.awt.event.ActionEvent evt
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator7;
+    private javax.swing.JSeparator jSeparator8;
     private javax.swing.JSeparator jSeparator9;
     private widget.Label label35;
     private widget.Label label36;
+    private javax.swing.JLabel lblNamaUser;
     private javax.swing.JLabel lblStts;
     private javax.swing.JLabel lblTgl;
     private javax.swing.JLabel lblUser;
