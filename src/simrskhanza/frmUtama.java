@@ -7323,7 +7323,7 @@ public class frmUtama extends javax.swing.JFrame {
         lblNamaUser.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         lblNamaUser.setForeground(new java.awt.Color(50, 50, 50));
         lblNamaUser.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblNamaUser.setText("-");
+        lblNamaUser.setText("Welcome");
         lblNamaUser.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         lblNamaUser.setName("lblNamaUser"); // NOI18N
         lblNamaUser.setPreferredSize(new java.awt.Dimension(300, 23));
