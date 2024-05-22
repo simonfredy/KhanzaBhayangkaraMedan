@@ -22,10 +22,13 @@
         <group>
             <file>file:/home/bhayangkara/projectkhanza/KhanzaBhayangkaraMedan/src/inventory/DlgDaftarPermintaanResep.java</file>
             <file>file:/home/bhayangkara/projectkhanza/KhanzaBhayangkaraMedan/src/inventory/DlgCopyResep.java</file>
+            <file>file:/home/bhayangkara/projectkhanza/KhanzaBhayangkaraMedan/src/simrskhanza/frmUtama.java</file>
             <file>file:/home/bhayangkara/projectkhanza/KhanzaBhayangkaraMedan/src/simrskhanza/DlgRawatJalan.java</file>
             <file>file:/home/bhayangkara/projectkhanza/KhanzaBhayangkaraMedan/src/simrskhanza/DlgKamarInap.java</file>
             <file>file:/home/bhayangkara/projectkhanza/KhanzaBhayangkaraMedan/src/simrskhanza/DlgRawatInap.java</file>
             <file>file:/home/bhayangkara/projectkhanza/KhanzaBhayangkaraMedan/src/simrskhanza/DlgKasirRalan.java</file>
+            <file>file:/home/bhayangkara/projectkhanza/KhanzaBhayangkaraMedan/src/simrskhanza/DlgCariPeriksaLab.java</file>
+            <file>file:/home/bhayangkara/projectkhanza/KhanzaBhayangkaraMedan/src/simrskhanza/DlgPeriksaLaboratorium.java</file>
         </group>
     </open-files>
 </project-private>

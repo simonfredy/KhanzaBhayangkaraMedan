@@ -8308,6 +8308,7 @@ public class frmUtama extends javax.swing.JFrame {
                 MnLogin.setText("Log In");
                 lblStts.setText("Status Admin : ");
                 lblUser.setText("Log Out");
+                lblNamaUser.setText("Welcome");
                 BtnMenu.setEnabled(false);
                 akses.setLogOut();
                 isTutup();

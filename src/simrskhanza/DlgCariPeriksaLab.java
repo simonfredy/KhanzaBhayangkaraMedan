@@ -1857,9 +1857,9 @@ private void tbDokterKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
                                 param.put("nopermintaan",rspermintaan.getString("noorder"));   
                                 param.put("tanggalpermintaan",rspermintaan.getString("tgl_permintaan"));  
                                 param.put("jampermintaan",rspermintaan.getString("jam_permintaan"));
-                                Valid.MyReport("rptPeriksaLabPermintaan.jasper","report","::[ Pemeriksaan Laboratorium ]::",param);   
-                            }else{
                                 Valid.MyReport("rptPeriksaLab.jasper","report","::[ Pemeriksaan Laboratorium ]::",param);   
+                            }else{
+                                Valid.MyReport("rptPeriksaLabPermintaan.jasper","report","::[ Pemeriksaan Laboratorium ]::",param);   
                             }
                         } catch (Exception e) {
                             System.out.println("Notif : "+e);
@@ -3852,9 +3852,9 @@ private void tbDokterKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
                                 param.put("nopermintaan",rspermintaan.getString("noorder"));   
                                 param.put("tanggalpermintaan",rspermintaan.getString("tgl_permintaan"));  
                                 param.put("jampermintaan",rspermintaan.getString("jam_permintaan"));
-                                Valid.MyReportPDF("rptPeriksaLabPermintaan.jasper","report","::[ Pemeriksaan Laboratorium ]::",param);
+                                Valid.MyReportPDF("rptPeriksaLab.jasper","report","::[ Pemeriksaan Laboratorium ]::",param);
                             }else{
-                                Valid.MyReportPDF("rptPeriksaLab.jasper","report","::[ Pemeriksaan Laboratorium ]::",param); 
+                                Valid.MyReportPDF("rptPeriksaLabPermintaan.jasper","report","::[ Pemeriksaan Laboratorium ]::",param); 
                             }
                         } catch (Exception e) {
                             System.out.println("Notif : "+e);
