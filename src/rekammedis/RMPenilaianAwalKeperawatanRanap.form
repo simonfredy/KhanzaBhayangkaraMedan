@@ -32,7 +32,7 @@
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-            <TitledBorder title="::[ Penilaian Awal Keperawatan Rawat Inap Umum ]::">
+            <TitledBorder title="::[ Pengkajian Awal Keperawatan Rawat Inap Umum ]::">
               <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
                 <LineBorder>
                   <Color PropertyName="color" blue="eb" green="f5" red="f0" type="rgb"/>
@@ -238,8 +238,8 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                  <JTabbedPaneConstraints tabName="Input Penilaian">
-                    <Property name="tabTitle" type="java.lang.String" value="Input Penilaian"/>
+                  <JTabbedPaneConstraints tabName="Input Pengkajian">
+                    <Property name="tabTitle" type="java.lang.String" value="Input Pengkajian"/>
                   </JTabbedPaneConstraints>
                 </Constraint>
               </Constraints>
@@ -505,7 +505,7 @@
                             </Property>
                             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                               <StringArray count="1">
-                                <StringItem index="0" value="23-03-2023 07:07:16"/>
+                                <StringItem index="0" value="11-06-2024 09:58:42"/>
                               </StringArray>
                             </Property>
                             <Property name="displayFormat" type="java.lang.String" value="dd-MM-yyyy HH:mm:ss"/>
@@ -7148,8 +7148,8 @@
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                  <JTabbedPaneConstraints tabName="Data Penilaian">
-                    <Property name="tabTitle" type="java.lang.String" value="Data Penilaian"/>
+                  <JTabbedPaneConstraints tabName="Data Pengkajian">
+                    <Property name="tabTitle" type="java.lang.String" value="Data Pengkajian"/>
                   </JTabbedPaneConstraints>
                 </Constraint>
               </Constraints>
@@ -7221,7 +7221,7 @@
                         </Property>
                         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                           <StringArray count="1">
-                            <StringItem index="0" value="23-03-2023"/>
+                            <StringItem index="0" value="11-06-2024"/>
                           </StringArray>
                         </Property>
                         <Property name="displayFormat" type="java.lang.String" value="dd-MM-yyyy"/>
@@ -7249,7 +7249,7 @@
                         </Property>
                         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                           <StringArray count="1">
-                            <StringItem index="0" value="23-03-2023"/>
+                            <StringItem index="0" value="11-06-2024"/>
                           </StringArray>
                         </Property>
                         <Property name="displayFormat" type="java.lang.String" value="dd-MM-yyyy"/>
